@@ -1,6 +1,9 @@
 # TP DSW
-tags: #dsw #tp
 
+
+<img src="imagenes/UTN_logo.png" alt="Logo UTN" width="200">
+
+<img src="imagenes/oscuro2.png" alt="Fondo Oscuro" width="500">
 Status: draft
 
 Propuesta de Trabajo Práctico
@@ -9,6 +12,10 @@ Descripción
 La propuesta de nuestro trabajo consiste en desarrollar un sistema que permita la gestión de alquileres de canchas de distintos deportes. Los Clientes podrán visualizar los turnos disponibles y realizar reservas sobre los mismos. Además, el Encargado podrá gestionar las canchas que tenga asignadas. Finalmente, el Dueño podrá acceder a distintas métricas relevantes para analizar el rendimiento de su negocio.
 
 Modelo
+
+<img src="imagenes/oscuro2.png" alt="Fondo Oscuro" width="500">
+
+Alcance
 
 | Requerimiento | Detalle |
 | :--- | :--- |
