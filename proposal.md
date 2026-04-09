@@ -2,42 +2,47 @@
 
 ## Grupo
 ### Integrantes
-* legajo - Apellido(s), Nombre(s)
+* 53786, Ondategui, Mateo. 
+* 54153, Lagostina, Lautaro Antolin
+* 55027, Surjak, Mirko.
+
 
 ### Repositorios
-* [frontend app](http://hyperlinkToGihubOrGitlab)
-* [backend app](http://hyperlinkToGihubOrGitlab)
-*Nota*: si utiliza un monorepo indicar un solo link con fullstack app.
+* [frontend app](https://github.com/MateoSr/frontend)
+* [backend app](https://github.com/MateoSr/backend)
+
 
 ## Tema
 ### Descripción
-*2 a 6 líneas describiendo el negocio (menos es más)*
+La propuesta de nuestro trabajo consiste en desarrollar un sistema que permita la gestión de alquileres de canchas de distintos deportes. Los Clientes podrán visualizar los turnos disponibles y realizar reservas sobre los mismos. Además, el Encargado podrá gestionar las canchas que tenga asignadas. Finalmente, el Dueño podrá acceder a distintas métricas relevantes para analizar el rendimiento de su negocio. 
 
 ### Modelo
-![imagen del modelo]()
+<p align="center">
+  <img src="imagenes/oscuro2.jpg" alt="Modelo de Dominio" width="100%">
+  <br>
+  <em>Diagrama de Modelo de Dominio</em>
+</p>
 
-*Nota*: incluir un link con la imagen de un modelo, puede ser modelo de dominio, diagrama de clases, DER. Si lo prefieren pueden utilizar diagramas con [Mermaid](https://mermaid.js.org) en lugar de imágenes.
+
 
 ## Alcance Funcional 
 
 ### Alcance Mínimo
 
-*Nota*: el siguiente es un ejemplo para un grupo de 3 integrantes para un sistema de hotel. El 
-
 Regularidad:
 |Req|Detalle|
 |:-|:-|
-|CRUD simple|1. CRUD Tipo Habitacion<br>2. CRUD Servicio<br>3. CRUD Localidad|
-|CRUD dependiente|1. CRUD Habitación {depende de} CRUD Tipo Habitacion<br>2. CRUD Cliente {depende de} CRUD Localidad|
-|Listado<br>+<br>detalle| 1. Listado de habitaciones filtrado por tipo de habitación, muestra nro y tipo de habitación => detalle CRUD Habitacion<br> 2. Listado de reservas filtrado por rango de fecha, muestra nro de habitación, fecha inicio y fin estadía, estado y nombre del cliente => detalle muestra datos completos de la reserva y del cliente|
-|CUU/Epic|1. Reservar una habitación para la estadía<br>2. Realizar el check-in de una reserva|
+|CRUD simple|1. CRUD Encargado de Cancha<br>2. CRUD Dueño de cancha <br>3. CRUD Tipo de Usuario|
+|CRUD dependiente|1. CRUD Cancha {depende de} CRUD Complejo<br>2. CRUD Localidad {depende de} CRUD Provincia|
+|Listado<br>+<br>detalle| 1. Listado de complejos que poseen turnos disponibles en un determinado horario para un deporte.<br> 2. Listado de recaudación diario durante un mes por complejo|
+|CUU/Epic|1. Reservar un turno de una cancha en un horario<br>2.Realizar reserva de turno fijo|
 
 
 Adicionales para Aprobación
 |Req|Detalle|
 |:-|:-|
-|CRUD |1. CRUD Tipo Habitacion<br>2. CRUD Servicio<br>3. CRUD Localidad<br>4. CRUD Provincia<br>5. CRUD Habitación<br>6. CRUD Empleado<br>7. CRUD Cliente|
-|CUU/Epic|1. Reservar una habitación para la estadía<br>2. Realizar el check-in de una reserva<br>3. Realizar el check-out y facturación de estadía y servicios|
+|CRUD |1. CRUD Encargado de Cancha<br>2. CRUD  Dueño de cancha<br>3. CRUD Tipo de Usuario<br>4. CRUD Localidad<br>5. CRUD Provincia<br>6. CRUD Cliente<br>7. CRUD Complejo <br> 8.  CRUD Tipo de Cancha <br> 9. CRUD Turno <br> 10. CRUD Tipo de Turno|
+|CUU/Epic|1. Reservar un turno de una cancha en un horario<br>2. Realizar reserva de turno fijo <br> 3. Realizar una opinion del complejo|
 
 
 ### Alcance Adicional Voluntario
@@ -46,7 +51,7 @@ Adicionales para Aprobación
 
 |Req|Detalle|
 |:-|:-|
-|Listados |1. Estadía del día filtrado por fecha muestra, cliente, habitaciones y estado <br>2. Reservas filtradas por cliente muestra datos del cliente y de cada reserve fechas, estado cantidad de habitaciones y huespedes|
-|CUU/Epic|1. Consumir servicios<br>2. Cancelación de reserva|
-|Otros|1. Envío de recordatorio de reserva por email|
+|Listados |Listado de turnos realizados por complejo + detalle  <br>2. Listado de turnos de reservados diarios.|
+|CUU/Epic|1. Cancelación de reserva|
+|Otros|1. Envío de recordatorio de reserva por email previo al inicio del turno <br> 2. Implementacion de billetera para realizar reserva|
 
