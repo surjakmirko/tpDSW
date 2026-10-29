@@ -11,6 +11,9 @@
 * [frontend app](https://github.com/MateoSr/frontend)
 * [backend app](https://github.com/MateoSr/backend)
 
+### Video
+* [link del video](https://youtu.be/HndhDLwAeFQ)
+
 
 ## Tema
 ### Descripción
