@@ -49,7 +49,7 @@ Turno Libre es un sistema para la gestión de alquileres de canchas de distintos
 
 Respecto de la propuesta original, el modelo de dominio cambió. Los distintos tipos de usuario (Cliente, Encargado, Dueño, Administrador) quedaron unificados en una única entidad `Usuario` que se diferencia por su `TipoUsuario`, y se sumó `OrdenPago` para soportar el cobro con Mercado Pago. El esquema vigente está en [`prisma/schema.prisma`](https://github.com/MateoSr/backend/blob/main/prisma/schema.prisma) y se resume en este diagrama:
 <p align="center">
-  <img src="imagenes/oscuro2.jpg" alt="Modelo de Dominio" width="100%">
+  <img src="imagenes/Untitled.svg" alt="Modelo de Dominio" width="100%">
   <br>
   <em>Diagrama de Modelo de Dominio</em>
 </p>
